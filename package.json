@@ -1,0 +1,30 @@
+{
+  "name": "muiraje-next",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "email-dev": "email dev --port=3001",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "14.2.10",
+    "@react-email/components": "0.0.32",
+    "nodemailer": "^6.9.15",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-responsive-carousel": "^3.2.23",
+    "zustand": "^5.0.0-rc.2"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "14.2.10",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "@types/react": "19.0.1",
+    "@types/react-dom": "19.0.1",
+    "react-email": "3.0.6"
+  }
+}
