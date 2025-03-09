@@ -1,0 +1,176 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*:root {*/
+/*  --background: #ffffff;*/
+/*  --foreground: #171717;*/
+/*}*/
+
+/*@media (prefers-color-scheme: dark) {*/
+/*  :root {*/
+/*    --background: #0a0a0a;*/
+/*    --foreground: #ededed;*/
+/*  }*/
+/*}*/
+
+/*body {*/
+/*  color: var(--foreground);*/
+/*  background: var(--background);*/
+/*  font-family: Arial, Helvetica, sans-serif;*/
+/*}*/
+
+/*@layer utilities {*/
+/*  .text-balance {*/
+/*    text-wrap: balance;*/
+/*  }*/
+/*}*/
+
+/*@font-face {*/
+/*  font-family: "Swiss Siena";*/
+/*  src: url("/app/assets/fonts/swiss_siena_rus_by_daymarius.eot"); !* IE 9 Compatibility Mode *!*/
+/*  src: url("/app/assets/fonts/swiss_siena_rus_by_daymarius.eot?#iefix")*/
+/*  format("embedded-opentype"),*/
+/*    !* IE < 9 *! url("/app/assets/fonts/swiss_siena_rus_by_daymarius.woff2")*/
+/*  format("woff2"),*/
+/*    !* Super Modern Browsers *! url("/app/assets/fonts/swiss_siena_rus_by_daymarius.woff")*/
+/*  format("woff"),*/
+/*    !* Firefox >= 3.6, any other modern browser *!*/
+/*  url("/app/assets/fonts/swiss_siena_rus_by_daymarius.ttf") format("truetype"),*/
+/*    !* Safari, Android, iOS *!*/
+/*  url("/app/assets/fonts/swiss_siena_rus_by_daymarius.svg#swiss_siena_rus_by_daymarius")*/
+/*  format("svg"); !* Chrome < 4, Legacy iOS *!*/
+/*}*/
+
+/*@font-face {*/
+/*  font-family: "basis33";*/
+/*  src: url("/app/assets/fonts/basis33.eot"); !* IE 9 Compatibility Mode *!*/
+/*  src: url("/app/assets/fonts/basis33.eot?#iefix") format("embedded-opentype"),*/
+/*    !* IE < 9 *! url("/app/assets/fonts/basis33.woff2") format("woff2"),*/
+/*    !* Super Modern Browsers *! url("/app/assets/fonts/basis33.woff") format("woff"),*/
+/*    !* Firefox >= 3.6, any other modern browser *! url("/app/assets/fonts/basis33.ttf")*/
+/*  format("truetype"),*/
+/*    !* Safari, Android, iOS *! url("/app/assets/fonts/basis33.svg#basis33") format("svg"); !* Chrome < 4, Legacy iOS *!*/
+/*}*/
+
+/*@font-face{*/
+/*  font-family: "ZT Formom";*/
+/*  src: url("/app/assets/fonts/ZT_Formom.eot");*/
+/*  src: url("/app/assets/fonts/ZT_Formom.eot?#iefix")format("embedded-opentype"),*/
+/*  url("/app/assets/fonts/ZT_Formom.woff")format("woff"),*/
+/*  url("/app/assets/fonts/ZT_Formom.woff2")format("woff2"),*/
+/*  url("/app/assets/fonts/ZT_Formom.ttf")format("truetype"),*/
+/*  url("/app/assets/fonts/ZT_Formom.svg#ZT Formom")format("svg");*/
+/*  font-weight:normal;*/
+/*  font-style:normal;*/
+/*  font-display:swap;*/
+/*}*/
+
+@layer base {
+  * {
+    @apply font-swiss
+  }
+}
+
+:root {
+
+  /*height: 100%;*/
+  /*font-family: "Swiss Siena";*/
+  /* line-height: 1.5; */
+  /* font-weight: 400; */
+
+  /* color-scheme: light dark; */
+  /* color: rgba(255, 255, 255, 0.87); */
+  background-color: #e1e1e1;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  /* box-sizing: border-box; */
+
+  /*font-family: var(--font-swiss-siena);*/
+}
+
+.bg-gradient-top {
+  background: linear-gradient(
+          90deg,
+          rgb(0, 12, 120),
+          rgb(181, 181, 181) 82.5%
+  );
+}
+
+.bg-gradient-dark {
+  background: linear-gradient(180.00deg, rgb(0, 12, 120) 22%,rgb(0, 0, 0) 89.5%);
+}
+
+.render {
+  image-rendering: pixelated;
+}
+
+.text-shadow {
+  text-shadow: black 1px 0px 0,
+  black 0px 1px 0;
+}
+
+.text-vertical {
+  writing-mode: vertical-rl;
+}
+
+.swiss-siena {
+  font-family: 'Swiss Siena';
+}
+
+.font-basic33 {
+  font-family: 'basis33';
+  letter-spacing: -1px;
+}
+
+.zt-formom {
+  font-family: "ZT Formom";
+}
+
+.mini_btn {
+  background-image: url("/components-assets/btn-bg-small.svg");
+  background-size: cover;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.mini_btn:active {
+  background-image: url("/components-assets/btn-bg-small-click.svg");
+}
+
+.mini_btn:focus-visible {
+  outline: 2px solid black;
+  outline-offset: 2px;
+}
+
+.bg-gradient-gray {
+  background: linear-gradient(180.00deg, rgb(255, 255, 255) 16%,rgb(185, 185, 185) 44.5%);
+}
+
+body {
+  /*height: 100%;*/
+  overflow: hidden;
+}
+
+.inline-shadow {
+  /*color: #B5B5B5;*/
+  background-color: #8e8e8e;
+  color: transparent;
+  font-size: 30px;
+  text-shadow: 0px 1px 1px rgb(181 181 181);;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
+
+.popup-bg {
+  background: rgba(0,0,0, .3);
+}
