@@ -31,7 +31,7 @@ export default function LighterPage() {
 Матовое покрытие.
 (ВНИМАНИЕ!!! Доступно только доставкой “Мьюражер” по Санкт-Петербургу)."
                       price={224}>
-                <Image unoptimized width={750} height={1000} src={girl} alt="" className="absolute bottom-70 right-40  "/>
+                <Image unoptimized width={600} height={1000} src={girl} alt="" className="absolute bottom-60 right-40  "/>
                 {/* <img src={girl} alt="" className="md:static z-10 w-52 absolute bottom-0 right-0 " /> */}
             </ItemPage>
         </>
