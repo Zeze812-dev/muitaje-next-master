@@ -6,8 +6,10 @@ import pantsHover from "@/assets/catalog/pants.webp"
 import pants from "@/assets/catalog/lightpants.webp"
 import fireHover from "@/assets/catalog/fire.webp"
 import fire from "@/assets/catalog/fire2.webp"
-import perc from "@/assets/catalog/перчатки.webp"
+import perc from "@/assets/catalog/gloves.webp"
+import perc2 from "@/assets/catalog/gloveshover.webp"
 import podv from "@/assets/catalog/necklace.webp"
+import podv2 from "@/assets/catalog/necklacehover.webp"
 
 import {PopupWarn} from "../popupWarn.jsx";
 import React, { useState } from 'react';
@@ -55,8 +57,8 @@ export function Catalog() {
                             <Item image={hoodie} hoverImage={hoodie} page="hoodie" name="COZY OVERSIZE GRAY HOODIE UNISEX" price="4824" />
                             <Item image={pants} hoverImage={pantsHover} page="Light_Gray" name="COZY OVERSIZE GRAY PANTS UNISEX" price="5824" />
                             <Item image={top} hoverImage={topHover} page="White_Top" name="COZY GRAY TANK TOP UNISEX" price="2624" />
-                            <Item image={perc} hoverImage={perc} page="gloves" name="COZY BLUE GLOVES UNISEX" price="2924" />
-                            <Item image={podv} hoverImage={podv} page="necklace" name="COZY SILVER NECKLACE UNISEX" price="8424" />
+                            <Item image={perc} hoverImage={perc2} page="gloves" name="COZY BLUE GLOVES UNISEX" price="2924" />
+                            <Item image={podv} hoverImage={podv2} page="necklace" name="COZY SILVER NECKLACE UNISEX" price="8424" />
                             <Item image ={fire} hoverImage={fireHover} page="Black" name="COZY BLUE AND RED LIGHTERS" price="224"/>
                         </main>
                     </div>
