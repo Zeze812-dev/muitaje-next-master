@@ -35,16 +35,17 @@ export default function FormContent({orderHandler}) {
     return (<>
         <form action={action} className=" flex flex-col items-center w-full px-5">
 
-            <Image className="h-10 render" src={whoareyou} alt=""/>
+            <Image className="h-12 render" src={whoareyou} alt=""/>
 
             <Input required name="name">Получатель (ФИО полностью)</Input>
             <Input required type="email" name="email">Email</Input>
             <Input required type="number" name="phone">Телефон</Input>
 
-            <Image className="h-10 mt-10" src={delivery} alt=""/>
+            <Image className="h-11 mt-10" src={delivery} alt=""/>
 
-            <div className="w-full">
-                <Input required>Ваш Выберите пункт получения СДЭК</Input>
+            <Input required>Ваш Выберите пункт получения СДЭК</Input>
+            <div className="w-3/5">
+
 
                 <label className="flex justify-between" htmlFor="sdec">
                     <div>
