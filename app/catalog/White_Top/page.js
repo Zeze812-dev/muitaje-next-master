@@ -24,7 +24,8 @@ export default function TopPage() {
             <title>Muiraje Top</title>
             <ItemPage size={size} png={png} color={color} imgs={imgs} title="Catalog/Top" itemName="COZY WHITE TANK TOP SLIM"
                       about1="Отправка в течение 7 дней. Изготавливаюсь непосредственно в Санкт-Петербурге :)"
-                      about2="Легко сочетаюсь с элементами гардероба, помогая создавать разнообразные образы.(Вы можете выбрать длину майки из списка или указать желаемую длину в комментарии при оформлении заказа). Хлопок 100%. "
+                      about2="Легко сочетаюсь с элементами гардероба, помогая создавать разнообразные образы.
+Хлопок 92%. Эластан 8 %. Немного просвечиваю! "
                       price={2624}>
                 <Image unoptimized width={350} height={1000} src={girl} alt="" className="absolute bottom-36 right-20  "/>
                 {/* <img src={girl} alt="" className="md:static z-10 w-52 absolute bottom-0 right-0 " /> */}
