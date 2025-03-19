@@ -3,7 +3,7 @@ import nodemailer from "nodemailer";
 
 
 export async function orderHandler(formData, a) {
-    'use server'
+
 
     const nodemailer = require('nodemailer');
 
