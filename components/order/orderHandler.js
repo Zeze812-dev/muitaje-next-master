@@ -1,7 +1,6 @@
 import nodemailer from "nodemailer";
 
 export async function orderHandler(formData, a) {
-    'use server';
 
     console.log("Form Data:", formData);
     console.log("Additional Data:", a);
