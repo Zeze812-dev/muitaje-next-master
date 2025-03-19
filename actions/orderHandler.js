@@ -55,4 +55,5 @@ export async function orderHandler(formData, cart) {
     });
 
     console.log('Email sent successfully');
+     redirect('/ordernumber');
 }
