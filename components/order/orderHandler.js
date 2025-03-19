@@ -51,7 +51,7 @@ export async function orderHandler(formData, cart) {
         to: formData.get('email'),
         subject: 'YOU ORDER FROM MUIRAJE',
         text: 'YOU ORDER FROM MUIRAJE',
-  
+         html: htmlContent,
     });
 
     console.log('Email sent successfully');
