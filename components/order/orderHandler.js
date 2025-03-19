@@ -1,52 +1,25 @@
-import nodemailer from "nodemailer";
-// const nodemailer = require('nodemailer');
+'use server';
 
+import nodemailer from 'nodemailer';
 
-export async function orderHandler(formData, a) {
-
-
-    const nodemailer = require('nodemailer');
-
-    console.log(formData, a)
+export async function orderHandler(formData, cart) {
+    console.log(formData, cart);
 
     let transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
             user: 'kambulatfanboy@gmail.com',
-            pass: 'sexaboqt23',
+            pass: 'pvurpoycibimpgdi',
         },
     });
 
-    console.log(formData, a)
-
     await transporter.sendMail({
         from: '"MUIRAJE" <kambulatfanboy@gmail.com>',
-        to: 'hukuto24@mail.ru',
+        to: formData.get('email'),
         subject: 'YOU ORDER FROM MUIRAJE',
         text: 'YOU ORDER FROM MUIRAJE',
-        html:
-            'This <i>message</i> with <strong>attachments</strong>.',
-    })
+        html: 'This <i>message</i> with <strong>attachments</strong>.',
+    });
 
-    console.log(formData, a)
+    console.log('Email sent successfully');
 }
-
-
-// let transporter = nodemailer.createTransport({
-//     service: 'gmail',
-//     auth: {
-//         user: 'tixomir5150@gmail.com',
-//         pass: 'xdmkdjvnejcyvcbz',
-//     },
-// });
-//
-// const a = transporter.sendMail({
-//     from: '"MUIRAJE" <tixomir5150@gmail.com>',
-//     to: 'tixomirkin@vk.com',
-//     subject: 'YOU ORDER FROM MUIRAJE',
-//     text: 'YOU ORDER FROM MUIRAJE',
-//     html:
-//         'This <i>message</i> with <strong>attachments</strong>.',
-// })
-//
-// console.log(a)

@@ -1,4 +1,5 @@
-"use client"
+// FormContent.jsx
+"use client";
 
 import Image from "next/image";
 import whoareyou from "@/components-assets/order/Who are you_.png";
@@ -6,14 +7,12 @@ import Input from "@/components/order/input";
 import delivery from "@/components-assets/order/Delivery..png";
 import thatsriht from "@/components-assets/order/Thatright.png";
 import Link from "next/link";
-import {useCart} from "@/app/store";
-import check from "@/components-assets/order/check.svg"
-import nocheck from "@/components-assets/order/nocheck.svg"
- import {orderHandler} from "@/components/order/orderHandler";
+import { useCart } from "@/app/store";
+import check from "@/components-assets/order/check.svg";
+import nocheck from "@/components-assets/order/nocheck.svg";
 
-export default function FormContent({orderHandler}) {
-
-    const cart = useCart((state) => state.cart)
+export default function FormContent({ orderHandler }) {
+    const cart = useCart((state) => state.cart);
 
     const calculateTotal = (cart) => {
         return cart.reduce(
@@ -25,13 +24,12 @@ export default function FormContent({orderHandler}) {
             { totalPrice: 0, totalCount: 0 }
         );
     };
-//
-    const { totalPrice, totalCount } = calculateTotal(cart)
+
+    const { totalPrice, totalCount } = calculateTotal(cart);
 
     async function action(formData) {
-        await orderHandler(formData, cart)
+        await orderHandler(formData, cart);
     }
-
     return (<>
         <form action={action} className=" flex flex-col items-center w-full px-5">
 
