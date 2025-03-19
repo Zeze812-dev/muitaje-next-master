@@ -1,31 +1,52 @@
 import nodemailer from "nodemailer";
+// const nodemailer = require('nodemailer');
+
 
 export async function orderHandler(formData, a) {
+    'use server'
 
-    console.log("Form Data:", formData);
-    console.log("Additional Data:", a);
+    const nodemailer = require('nodemailer');
 
-    // Создаем транспорт для отправки почты
+    console.log(formData, a)
+
     let transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: process.env.EMAIL_USER, // Используем переменные окружения
-            pass: process.env.EMAIL_PASS, // Используем переменные окружения
+            user: 'kambulatfanboy@gmail.com',
+            pass: 'sexaboqt23',
         },
     });
 
-    try {
-        // Отправляем письмо
-        const info = await transporter.sendMail({
-            from: '"MUIRAJE" <kambulatfanboy@gmail.com>', // Отправитель
-            to: 'hukuto24@Mail.ru', // Получатель из formData
-            subject: 'YOU ORDER FROM MUIRAJE', // Тема письма
-            text: 'YOU ORDER FROM MUIRAJE', // Текстовая версия письма
-            html: 'This <i>message</i> with <strong>attachments</strong>.', // HTML-версия письма
-        });
+    console.log(formData, a)
 
-        console.log("Email sent successfully:", info.messageId);
-    } catch (error) {
-        console.error("Error sending email:", error);
-    }
+    await transporter.sendMail({
+        from: '"MUIRAJE" <kambulatfanboy@gmail.com>',
+        to: 'hukuto24@mail.ru',
+        subject: 'YOU ORDER FROM MUIRAJE',
+        text: 'YOU ORDER FROM MUIRAJE',
+        html:
+            'This <i>message</i> with <strong>attachments</strong>.',
+    })
+
+    console.log(formData, a)
 }
+
+
+// let transporter = nodemailer.createTransport({
+//     service: 'gmail',
+//     auth: {
+//         user: 'tixomir5150@gmail.com',
+//         pass: 'xdmkdjvnejcyvcbz',
+//     },
+// });
+//
+// const a = transporter.sendMail({
+//     from: '"MUIRAJE" <tixomir5150@gmail.com>',
+//     to: 'tixomirkin@vk.com',
+//     subject: 'YOU ORDER FROM MUIRAJE',
+//     text: 'YOU ORDER FROM MUIRAJE',
+//     html:
+//         'This <i>message</i> with <strong>attachments</strong>.',
+// })
+//
+// console.log(a)
