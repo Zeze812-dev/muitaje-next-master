@@ -8,6 +8,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Input from "@/components/order/input";
 import FormContent from "@/components/order/form";
+import OrderForm from '@/components/actions/Orderform.server';
 import {orderHandler} from "@/components/order/orderHandler";
 //
 // async function orderHandler(formData) {
@@ -27,8 +28,7 @@ export default function OrderPage() {
             <div className="min-h-screen relative">
                 <Window title="Your order" bg_bar="grey">
 
-                       <FormContent />
-
+                    <OrderForm />
 
                 </Window>
 
