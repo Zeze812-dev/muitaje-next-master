@@ -9,7 +9,7 @@ import Link from "next/link";
 import {useCart} from "@/app/store";
 import check from "@/components-assets/order/check.svg"
 import nocheck from "@/components-assets/order/nocheck.svg"
-// import {orderHandler} from "@/components/order/orderHandler";
+ import {orderHandler} from "@/components/order/orderHandler";
 
 export default function FormContent({orderHandler}) {
 
