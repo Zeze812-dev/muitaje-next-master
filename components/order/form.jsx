@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Image from "next/image";
 import whoareyou from "@/components-assets/order/Who are you_.png";
@@ -7,13 +7,11 @@ import delivery from "@/components-assets/order/Delivery..png";
 import thatsriht from "@/components-assets/order/Thatright.png";
 import Link from "next/link";
 import { useCart } from "@/app/store";
-import check from "@/components-assets/order/check.svg"
-import nocheck from "@/components-assets/order/nocheck.svg"
-import {orderHandler} from "@/components/order/orderHandler";
+import check from "@/components-assets/order/check.svg";
+import nocheck from "@/components-assets/order/nocheck.svg";
 
-export async function FormContent({orderHandler}) {
-
-    const cart = useCart((state) => state.cart)
+export default function FormContent({ orderHandler }) {
+    const cart = useCart((state) => state.cart);
 
     const calculateTotal = (cart) => {
         return cart.reduce(
@@ -25,14 +23,10 @@ export async function FormContent({orderHandler}) {
             { totalPrice: 0, totalCount: 0 }
         );
     };
-//
-    const { totalPrice, totalCount } = calculateTotal(cart)
+
+    const { totalPrice, totalCount } = calculateTotal(cart);
 
     async function action(formData) {
-        if (typeof orderHandler !== 'function') {
-            console.error('orderHandler is not a function');
-            return;
-        }
         await orderHandler(formData, cart);
     }
 
