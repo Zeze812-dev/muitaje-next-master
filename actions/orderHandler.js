@@ -2,6 +2,7 @@
 'use server'
 
 import nodemailer from 'nodemailer';
+import {redirect} from "next/navigation";
 
 export async function orderHandler(formData, cart) {
     console.log(formData, cart);
