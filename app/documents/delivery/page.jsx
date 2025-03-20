@@ -1,5 +1,5 @@
 import {Window} from "@/components/documents/window.jsx";
-
+import logo from '@/components-assets/order/logodostavka.webp'
 export default function DeliveryPage() {
     return (
         <>
@@ -21,7 +21,7 @@ export default function DeliveryPage() {
                             времени и дате, когда вы сможете принять заказ.
                         </li>
                     </ul>
-                    <p className="text-4xl pt-6">При сумме заказа от 12 424 рублей доставка осуществляется бесплатно, независимо от выбранного способа!</p>
+                    <p className="text-2xl pt-6">При сумме заказа от 12 424 рублей доставка осуществляется бесплатно, независимо от выбранного способа!</p>
                 </div>
             </Window>
         </>
