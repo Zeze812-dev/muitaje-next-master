@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import './OrderNumber.css';
 import itworked2 from '@/components-assets/order/itworked23.webp';
 import soon from '@/components-assets/order/soon.webp';
-import { Window, WindowBorder } from '@/components/documents/window.jsx';
+import { Window, WindowBorder } from '@/components/documents/window2.jsx';
 import Image from 'next/image';
 import tg from "@/components-assets/order/tgorder.webp"
 
@@ -35,17 +35,19 @@ const OrderNumber = () => {
             <div className="block">
                 <Window title="Your order" bg_bar="grey">
                     <main className="block">
-                        <div className="block">
-                            <Image className="h-52 render" src={itworked2} alt="" />
+                        <div className="block w-3/5 ml-64">
+                            <Image className="h-32" src={itworked2} alt="" />
                         </div>
                         <div className="w-full flex justify-center text-center">
-                            <h2 className=" text-9xl pt-20 pb-20 justify-center content-center">{orderNumber}</h2>
+                            <h2 className="text-7xl pt-20 pb-20 justify-center content-center">{orderNumber}</h2>
                         </div>
-                        <div className="block">
-                            <Image className="h-60 render" src={soon} alt="" />
-                            <div className="flex pt-5 pb-0 justify-center content-center">
-                                <Image className="h-8 render " src={tg} alt="" />
-                            </div>
+                        <div className="block w-3/5 ml-64">
+                            <Image className="h-32 render" src={soon} alt="" />
+                            <a href="https://t.me/care224radge" target="_blank" rel="noopener noreferrer">
+                                <div className="flex pt-5 pb-0 justify-center content-center">
+                                    <Image className="h-8 render" src={tg} alt="" />
+                                </div>
+                            </a>
                         </div>
                     </main>
                 </Window>
