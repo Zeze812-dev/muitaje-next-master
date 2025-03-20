@@ -34,15 +34,15 @@ const OrderNumber = () => {
 
             <div className="block">
                 <Window title="Your order" bg_bar="grey">
-                    <main className="block">
-                        <div className="block w-3/5 ml-64">
-                            <Image className="h-32" src={itworked2} alt="" />
+                    <main className="block justify-center text-center align-middle">
+                        <div className="block w-2/4 m-auto align-middle justify-center">
+                            <Image className="h-32 mx-auto" src={itworked2} alt="" />
                         </div>
                         <div className="w-full flex justify-center text-center">
-                            <h2 className="text-7xl pt-20 pb-20 justify-center content-center">{orderNumber}</h2>
+                            <h2 className="text-8xl fill:#1200ff pt-20 pb-20 justify-center content-center">{orderNumber}</h2>
                         </div>
-                        <div className="block w-3/5 ml-64">
-                            <Image className="h-32 render" src={soon} alt="" />
+                        <div className="block w-2/4 m-auto align-middle justify-center">
+                            <Image className="h-34 mx-auto render" src={soon} alt="" />
                             <a href="https://t.me/care224radge" target="_blank" rel="noopener noreferrer">
                                 <div className="flex pt-5 pb-0 justify-center content-center">
                                     <Image className="h-8 render" src={tg} alt="" />
