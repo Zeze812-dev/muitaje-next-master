@@ -1,4 +1,5 @@
-import {GreyBar} from "@/components/items/grey_bar.jsx";
+import {BaseBar} from "@/components/base_bar";
+import logo from "@/components-assets/order/logodostavka.webp"
 
 export default function DocumentPage() {
 
@@ -7,7 +8,7 @@ export default function DocumentPage() {
             <title>Muiraje Documents</title>
             <div className="  relative bg-gradient-dark text-white overflow-auto h-screen">
                 <div className="relative pb-64 ">
-                    <GreyBar title="Documents"/>
+                    <BaseBar title="Documents" bg="grey" logo={logo}/>
 
                     <div className="px-5 pt-8 md:flex gap-10">
                         <div
