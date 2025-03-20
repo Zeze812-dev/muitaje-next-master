@@ -4,8 +4,16 @@ import { Carousel } from 'react-responsive-carousel';
 import arrow_left from "@/components-assets/icons/arrow-left.svg"
 import arrow_right from "@/components-assets/icons/arrow-right.svg"
 import Image from "next/image";
+import {useState} from "react";
+import arrow_left_hover from "@/components-assets/icons/arrowhoverandclickleft.svg"
+import arrow_left_active from "@/components-assets/icons/arrowhoverandclickleft.svg"
+import arrow_right_hover from "@/components-assets/icons/arrowhoverandclickright.svg"
+import arrow_right_active from "@/components-assets/icons/arrowhoverandclickright.svg"
+import arrow_left_focus from "@/components-assets/icons/arrowleftfocus.svg"
 
 export default function FullCarusel({imgs, open, setOpen, selImg}) {
+    const [prevArrowSrc, setPrevArrowSrc] = useState(arrow_left);
+    const [nextArrowSrc, setNextArrowSrc] = useState(arrow_right);
 
     if (!open) return null;
 
@@ -17,13 +25,21 @@ export default function FullCarusel({imgs, open, setOpen, selImg}) {
                           infiniteLoop={true}
                           renderArrowPrev={(onClickHandler, hasPrev, label) =>
                               (
-                                  <button type="button" onClick={onClickHandler} title={label} className="absolute z-30 h-12 w-12 top-1/2 left-2">
-                                      <Image src={arrow_left} alt="" />
+                                  <button type="button" onClick={onClickHandler} title={label} className="absolute z-30 h-12 w-12 top-1/2 left-2"
+                                          onMouseEnter={() => setPrevArrowSrc(arrow_left_hover)}
+                                          onMouseLeave={() => setPrevArrowSrc(arrow_left)}
+                                          onMouseDown={() => setPrevArrowSrc(arrow_left_active)}
+                                          onMouseUp={() => setPrevArrowSrc(arrow_left_hover)}>
+                                      <Image src={prevArrowSrc} alt="" />
                                   </button>)}
                           renderArrowNext={(onClickHandler, hasNext, label) =>
                               (
-                                  <button type="button" onClick={onClickHandler} title={label} className="absolute z-30 h-12 w-12 top-1/2 right-2">
-                                      <Image src={arrow_right} alt="" />
+                                  <button type="button" onClick={onClickHandler} title={label} className="absolute z-30 h-12 w-12 top-1/2 right-2"
+                                          onMouseEnter={() => setNextArrowSrc(arrow_right_hover)}
+                                          onMouseLeave={() => setNextArrowSrc(arrow_right)}
+                                          onMouseDown={() => setNextArrowSrc(arrow_right_active)}
+                                          onMouseUp={() => setNextArrowSrc(arrow_right_hover)}>
+                                      <Image src={nextArrowSrc} alt="" />
                                   </button>
                               )
                           }>
