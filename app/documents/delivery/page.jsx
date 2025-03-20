@@ -4,7 +4,7 @@ export default function DeliveryPage() {
     return (
         <>
             <title>Muiraje Delivery</title>
-            <Window title="Documents/Delivery">
+            <Window title="Documents/Delivery" logo={logo}>
                 <div className="text-center flex flex-col items-center ">
                     <h1 className="text-7xl sm:text-9xl leading-[100px]">
                         Доставка.
