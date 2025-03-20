@@ -17,12 +17,13 @@ import Image from "next/image";
 export default function TopPage() {
     const size = ["S", "M", "L", "XL"];
     const color = ["White_Top", "Gray_Top"];
+    const displayColor = color.map(item => item.replace(/_/g, ' '));
     const imgs = [top_img1, top_img2, top_img3, top_img4, top_img5, top_img6]
     const png=[topwhite]
     return (
         <>
             <title>Muiraje Top</title>
-            <ItemPage size={size} png={png} color={color} imgs={imgs} title="Catalog/Top" itemName="COZY WHITE TANK TOP SLIM"
+            <ItemPage size={size} png={png} color={color} displayColor={displayColor} imgs={imgs} title="Catalog/Top" itemName="COZY WHITE TANK TOP SLIM"
                       about1="Отправка в течение 7 дней. Изготавливаюсь непосредственно в Санкт-Петербурге :)"
                       about2="Легко сочетаюсь с элементами гардероба, помогая создавать разнообразные образы.
 Хлопок 92%. Эластан 8 %. Немного просвечиваю! "
