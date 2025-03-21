@@ -16,7 +16,7 @@ import {ItemPage} from "@/components/items/item_page";
 import Image from "next/image";
 
 export default function CatalogPage() {
-    const size = ["S", "M", "L", "XL", "XLL"];
+    const size = ["S", "M", "L", "XL", "XXL"];
     const imgs = [hoodie_img2, hoodie_img1, hoodie_img3, hoodie_img4, hoodie_img5, hoodie_img6, hoodie_img7, hoodie_img8, hoodie_img9]
     const png = [hoodie_png]
 
