@@ -1,5 +1,5 @@
 import {BaseBar} from "@/components/base_bar.jsx";
-import logo from "@/components-assets/cart/iconminicomp.webp"
+import logo from "@/components-assets/cart/iconcontact.svg"
 
 export default function ContactPage() {
     return (
@@ -15,7 +15,7 @@ export default function ContactPage() {
                     </div>
                     <div className="flex flex-col text-center mb-20 md:flex-row items-center justify-between w-full">
                         <h1 className="text-7xl">Email</h1>
-                        <a className="underline text-2xl leading-3 md:text-7xl" href="mailto:muiraje@muiraje.com">muiraje@muiraje.com</a>
+                        <a className="underline text-2xl leading-3 md:text-7xl" href="mailto:muiraje@muiraje.ru">muiraje@muiraje.ru</a>
                     </div>
                     <div className="flex flex-col text-center md:flex-row items-center justify-between w-full">
                         <h1 className="text-7xl">Telegram channel</h1>
