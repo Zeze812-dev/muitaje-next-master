@@ -244,6 +244,12 @@ body {
     .hscreencatalog{
         height: 800px;
     }
+    .cartwfull{
+        width: 100%;
+    }
+    .cartitemminw{
+        width: 100%;
+    }
 }
 @media (min-width: 640px){
     .static640{
@@ -252,6 +258,10 @@ body {
     .widthgloves{
         width: 1000px;
     }
+    .cartblock{
+        display: block;
+    }
+
 
     .heightphonegirl400{
         height: 450px;
@@ -269,6 +279,15 @@ body {
 @media (min-width: 768px) {
     .otherposition{
         position: static;
+    }
+    .minwcartitem96{
+        width: 24rem;
+    }
+    .widthordercart{
+        width: 33%;
+    }
+    .cartflex{
+        display: flex;
     }
   .md768height1{
     min-height: 730px;
