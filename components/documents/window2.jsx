@@ -20,9 +20,9 @@ export function Window({children, title="", black=false, bg_bar="blue", logo}) {
     return (
         <>
             <div className={`h-screen overflow-auto bg-black ${black && "bg-stone-300"}`}>
-                <div className="relative px-2 pt-6 md:px-10 text-white sm:flex  h-full justify-center items-center">
+                <div className="relative px-2  pr-6 pt-6 md:px-10 text-white sm:flex  h-full justify-center items-center">
 
-                    <div className="relative  h-3/4 bg-stone-200 text-black w-4/5">
+                    <div className="relative md768height2 bg-stone-200 text-black w-screen">
                         <WindowBorder>
                             <BaseBar title={title} bg={bg_bar} linkTo={"/catalog"} logo={logo}/>
                             <main
