@@ -25,7 +25,7 @@ export default function TopPage() {
                       about1="Отправка в течение 7 дней. Изготавливаюсь непосредственно в Санкт-Петербурге :)"
                       about2="Легко сочетаюсь с элементами гардероба, помогая создавать разнообразные образы. (Вы можете выбрать длину майки из списка или указать желаемую длину в комментарии при оформлении заказа). Хлопок 100%. "
                       price={2624}>
-                <Image unoptimized width={350} height={1000} src={girl} alt="" className="absolute bottom-36 right-20  "/>
+                <Image unoptimized width={350} height={1000} src={girl} alt="" className=" absolute pt-5 sm:right-10 md768height1 heightphonegirl phonewidth phonetp350 phoneright0 heightphone topm0  sm:w-72 md:w-72   "/>
                 {/* <img src={girl} alt="" className="md:static z-10 w-52 absolute bottom-0 right-0 " /> */}
             </ItemPage>
         </>
