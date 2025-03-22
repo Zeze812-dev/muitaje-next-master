@@ -1,6 +1,6 @@
 import hoodie_png from "@/assets/catalog/hoodie.png"
 import hoodie_img2 from "@/assets/items/hoodie/hoodie1.webp"
-import hoodie_img1 from "@/assets/items/hoodie/hoodie2.webp"
+import hoodie_img1 from "@/assets/items/hoodie/hoodie123.webp"
 import hoodie_img3 from "@/assets/items/hoodie/hoodie3.webp"
 import hoodie_img4 from "@/assets/items/hoodie/hoodie4.webp"
 import hoodie_img5 from "@/assets/items/hoodie/hoodie5.webp"
@@ -29,7 +29,7 @@ export default function CatalogPage() {
 50% хлопок, 50% полиэстер, плотность: 305 г/м². "
                       price={4824}>
 
-                <Image unoptimized width={350} height={1000} src={girl} alt="" className="absolute bottom-16 right-20  "/>
+                <Image unoptimized src={girl} alt="" className="  absolute pt-5 sm:right-10 md768height1 heightphonegirl phonewidth phonetp350 phoneright0 heightphone topm0  sm:w-72 md:w-72  "/>
             </ItemPage>
         </>
     )
