@@ -11,22 +11,16 @@ const OrderNumber = () => {
     const [orderNumber, setOrderNumber] = useState(24000);
 
     useEffect(() => {
-        // Проверяем, что код выполняется в браузере
-        if (typeof window !== "undefined") {
-            // Получаем текущее значение из localStorage
-            const storedValue = localStorage.getItem('orderNumber');
-            let initialOrderNumber = storedValue !== null ? parseInt(storedValue, 10) : 24000;
-
-            // Увеличиваем значение на 1
-            const newOrderNumber = initialOrderNumber + 1;
-
-            // Сохраняем новое значение в localStorage
-            localStorage.setItem('orderNumber', newOrderNumber.toString());
-
-            // Устанавливаем новое значение в состояние
-            setOrderNumber(newOrderNumber);
-        }
-    }, []); // Пустой массив зависимостей гарантирует, что useEffect сработает только один раз
+        // Запрашиваем текущее значение счетчика с сервера
+        fetch('http://localhost:4000/api/ordernumber')
+            .then(response => response.json())
+            .then(data => {
+                setOrderNumber(data.orderNumber);
+            })
+            .catch(error => {
+                console.error('Error fetching order number:', error);
+            });
+    }, []);
 
     return (
         <>
@@ -36,7 +30,7 @@ const OrderNumber = () => {
                 <Window title="Your order" bg_bar="grey">
                     <main className="block justify-center text-center align-middle">
                         <div className="block w-2/4 m-auto align-middle justify-center">
-                            <Image className="h-32 mx-auto" src={itworked2} alt="" />
+                            <Image className="ordernumberw ordernumberh mx-auto" src={itworked2} alt="" />
                         </div>
                         <div className="w-full flex justify-center text-center">
                             <h2 className="text-8xl fill:#1200ff pt-20 pb-20 justify-center content-center">{orderNumber}</h2>
