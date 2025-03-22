@@ -160,6 +160,7 @@ body {
   overflow: hidden;
 }
 
+
 .inline-shadow {
   /*color: #B5B5B5;*/
   background-color: #8e8e8e;
@@ -174,3 +175,123 @@ body {
 .popup-bg {
   background: rgba(0,0,0, .3);
 }
+
+@media  (min-width: 350px) {
+  .phoneabsolute{
+ position: absolute;
+  }
+    .phonetp350{
+        margin-top: 350px;
+    }
+    .phonetp400{
+        margin-top: 400px;
+    }
+    .phonetp500{
+        margin-top: 550px;
+    }
+    .phonetp600{
+        margin-top: 600px;
+    }
+  .phonewidthtxt{
+    min-width: 340px;
+  }
+  .phonewidth{
+    width: 180px;
+  }
+
+  .heightphone{
+    height: 450px;
+  }
+  .heightphonenecklace{
+      height: 350px;
+  }
+  .heightphone350{
+      height: 350px;
+  }
+.phonealign{
+ margin-left: 0;
+}
+  .phonel{
+    margin-left: 210px;
+  }
+  .phonepb{
+ margin-bottom: 200px;
+  }
+  .phonemarginb500{
+      margin-top: 500px;
+  }
+    .phonemarginb1000{
+        margin-top: 1000px;
+    }
+    .phonemarginb850{
+        margin-top: 850px;
+    }
+    .phonemarginb800{
+        margin-top: 800px;
+    }
+    .phonemarginb700{
+        margin-top:700px;
+    }
+    .glovesgirlmr{
+        margin-right: 0px;
+    }
+    .w-fullphone{
+        width: 100%;
+    }
+  .phoneright0{
+      right: 0;
+  }
+    .hscreencatalog{
+        height: 800px;
+    }
+}
+@media (min-width: 640px){
+    .static640{
+        position: static;
+    }
+    .widthgloves{
+        width: 1000px;
+    }
+
+    .heightphonegirl400{
+        height: 450px;
+    }
+    .heightphonegirl{
+        height: 730px;
+    }
+    .topm0{
+        margin-top: 0px;
+    }
+    .mrgloves1024px{
+        margin-right: 0px;
+    }
+}
+@media (min-width: 768px) {
+    .otherposition{
+        position: static;
+    }
+  .md768height1{
+    min-height: 730px;
+  }
+    .md768height2{
+        min-height: 500px;
+    }
+    .widthnecklace{
+        width: 450px;
+    }
+  .minwidthtxt{
+      width: 896px;
+  }
+  .mrtopfire{
+      margin-top: 50px;
+  }
+  .heightphonegirlpants{
+      height: 400px;
+  }
+}
+@media (min-width: 1300px) {
+    .mrgloves1300{
+        margin-right:250px;
+    }
+}
+
