@@ -36,14 +36,14 @@ export default function CartPage() {
                     <main className="px-2 sm:px-4 mt-3 ">
                       
                         <Image className="mb-5" src={HICartImg} alt=""/>
-                        <div className="flex w-full">
+                        <div className="cartflex cartblock w-full">
                             <div className="block w-11/12">
                         {cart.length === 0 && <CartNull/>}
                         {cart.map(((item, index) => (
                             <CartItem key={index} index={index} item={item}/>
                         )))}
                         </div>
-                        <div className="block w-1/3">
+                        <div className="block widthordercart cartwfull">
                         <Order cart={cart}/>
 
                         <div className="mt-3 relative">
