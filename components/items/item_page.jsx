@@ -80,8 +80,8 @@ export function ItemPage({ children, size = [], color = [], displayColor = [], p
                                 {price} руб.
                             </p>
                         </div>
-                        <div className="absolute w-screen clear-right h-96 phoneright0  " >
-                            <div className="relative w-screen h-96">
+                        <div className="absolute w-1/3 clear-right h-96 phoneright0 " >
+                            <div className="relative w-full h-96">
                         {children}
                         </div>
                         </div>
