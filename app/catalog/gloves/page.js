@@ -9,7 +9,7 @@ import hoodie_img8 from "@/assets/items/gloves/gloves8.webp"
 import gloves from "@/assets/catalog/gloves.webp"
 import girl from "@/assets/items/gloves/gloves_girl.webp"
 
-import {ItemPage} from "@/components/items/item_page";
+import {ItemPage} from "@/components/items/item_page2";
 import Image from "next/image";
 
 export default function CatalogPage() {
