@@ -43,13 +43,13 @@ export function ItemPage({ children, size = [], color = [], displayColor = [], p
         <>
             <FullCarusel imgs={imgs} png={png} open={open} setOpen={setOpen} selImg={selImg} />
             <div className="relative bg-gradient-dark text-white overflow-auto h-screen">
-                <div className="relative pb-64">
+                <div className="relative">
                     <GreyBar title={title} />
                     <h1 className="text-4xl sm:text-5xl mx-14">
                         {itemName}
                     </h1>
 
-                    <div className="sm:flex md:px-10">
+                    <div className=" sm:flex md:px-10">
                         <div className="flex justify-center">
                             <div className="w-full px-4 sm:w-[400px]">
                                 <MyCaruel>
@@ -65,7 +65,7 @@ export function ItemPage({ children, size = [], color = [], displayColor = [], p
                             </div>
                         </div>
 
-                        <div className="text-2xl mx-3 text-in max-w-4xl z-10">
+                        <div className=" phonewidthtxt static640 phoneabsolute otherposition minwidthtxt text-2xl mx-3 text-in max-w-4xl z-10 clear-right">
                             <p className="z-20">
                                 WAIT FOR ME: <br />
                                 {about1}
@@ -80,11 +80,14 @@ export function ItemPage({ children, size = [], color = [], displayColor = [], p
                                 {price} руб.
                             </p>
                         </div>
-
+                        <div className="absolute w-screen clear-right h-96 phoneright0  " >
+                            <div className="relative w-screen h-96">
                         {children}
+                        </div>
+                        </div>
                     </div>
 
-                    <div className="w-full flex justify-center text-center">
+                    <div className="phonemarginb500 topm0 absolute w-full flex justify-center text-center">
                         <div className="z-20">
                             <WinButton onClick={addToCartAndOpenPopup}>I want it!</WinButton>
 
