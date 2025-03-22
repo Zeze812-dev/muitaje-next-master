@@ -9,7 +9,7 @@ import hoodie_img8 from "@/assets/items/gloves/gloves8.webp"
 import gloves from "@/assets/catalog/gloves.webp"
 import girl from "@/assets/items/gloves/gloves_girl.webp"
 
-import {ItemPage} from "@/components/items/item_page2";
+import {ItemPage} from "@/components/items/item_pagegloves";
 import Image from "next/image";
 
 export default function CatalogPage() {
@@ -28,7 +28,7 @@ export default function CatalogPage() {
 Вышитые диалоги бизнесменов рассказывают истории, а когда меня надевают, я ощущаю, как человек становится другим — собранным, уверенным, готовым к любым испытаниям. Я не просто защищаю от холода, я придаю образу изысканность и силу.  "
                       price={2924}>
 
-                <Image unoptimized width={1300} height={2000} src={girl} alt="" className="absolute bottom-24 right-60  "/>
+                <Image unoptimized width={1300} height={2000} src={girl} alt="" className=" absolute pt-5 w-fullphone sm:right-10  heightphonegirl400 mr-96 mrgloves1024px mrgloves1300 glovesgirlmr phonewidth phonetp350  phoneright0 heightphone350 topm0 widthgloves   "/>
             </ItemPage>
         </>
     )
