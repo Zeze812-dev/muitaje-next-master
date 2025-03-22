@@ -7,7 +7,7 @@ import pants_img5 from "@/assets/items/pants/pants5.webp"
 import pants_img6 from "@/assets/items/pants/pants6.webp"
 import girl from "@/assets/items/pants/pants-girl.webp"
 
-import {ItemPage} from "@/components/items/item_page";
+import {ItemPage} from "@/components/items/item_pagepants";
 
 import React from 'react';
 import Image from "next/image";
@@ -31,7 +31,7 @@ export default function PantsPage() {
 
                       price={5624}>
 
-                <Image unoptimized src={girl} alt="" className="absolute bottom-0 sm:right-10 sm:bottom-40 sm:w-96 md:w-[30rem] md:bottom-72"/>
+                <Image unoptimized src={girl} alt="" className="absolute mt-96 sm:right-10  heightphonegirlpants w-fullphone phonewidth phonetp400 phoneright0 heightphone topm0  sm:w-96 md:w-96 "/>
                 {/* <img src={girl} alt="" className="md:static z-10 w-52 absolute bottom-0 right-0 " /> */}
             </ItemPage>
         </>
