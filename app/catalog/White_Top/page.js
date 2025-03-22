@@ -28,7 +28,7 @@ export default function TopPage() {
                       about2="Легко сочетаюсь с элементами гардероба, помогая создавать разнообразные образы.
 Хлопок 92%. Эластан 8 %. Немного просвечиваю! "
                       price={2624}>
-                <Image unoptimized width={350} height={1000} src={girl} alt="" className="absolute bottom-36 right-20  "/>
+                <Image unoptimized width={350} height={1000} src={girl} alt="" className=" absolute pt-5 sm:right-10 md768height1 heightphonegirl phonewidth phonetp350 phoneright0 heightphone topm0  sm:w-72 md:w-72   "/>
                 {/* <img src={girl} alt="" className="md:static z-10 w-52 absolute bottom-0 right-0 " /> */}
             </ItemPage>
         </>
