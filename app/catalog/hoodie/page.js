@@ -1,6 +1,6 @@
 import hoodie_png from "@/assets/catalog/hoodie.png"
 import hoodie_img2 from "@/assets/items/hoodie/hoodie1.webp"
-import hoodie_img1 from "@/assets/items/hoodie/hoodie123.webp"
+import hoodie_img1 from "@/assets/items/hoodie/hoodie2.webp"
 import hoodie_img3 from "@/assets/items/hoodie/hoodie3.webp"
 import hoodie_img4 from "@/assets/items/hoodie/hoodie4.webp"
 import hoodie_img5 from "@/assets/items/hoodie/hoodie5.webp"
