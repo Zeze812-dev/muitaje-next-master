@@ -12,7 +12,7 @@ import necklace10 from "@/assets/items/necklace/necklace10.webp"
 import necklace11 from "@/assets/items/necklace/necklace11.webp"
 import girl from "@/assets/items/necklace/necklace_girl.webp"
 
-import {ItemPage} from "@/components/items/item_page";
+import {ItemPage} from "@/components/items/item_pagenecklace";
 
 import React from 'react';
 import Image from "next/image";
@@ -32,7 +32,7 @@ export default function NecklacePage() {
 Размер подвески: 2.4 см - длина, 3.3 см - высота."
             price={8424}>
 
-                <Image unoptimized src={girl} alt="" className="absolute bottom-0 sm:right-10 sm:bottom-40 sm:w-96 md:w-[30rem] md:bottom-20"/>
+                <Image unoptimized src={girl} alt="" className=" absolute pt-5 sm:right-10 md768height1 heightphonenecklace widthnecklace phonewidth phonetp600 phoneright0 heightphone topm0   "/>
                 {/* <img src={girl} alt="" className="md:static z-10 w-52 absolute bottom-0 right-0 " /> */}
             </ItemPage>
         </>
