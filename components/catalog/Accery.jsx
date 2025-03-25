@@ -53,7 +53,7 @@ export function Catalog() {
                 <div className=" border-l-2 heightother border-t-2 border-stone-400">
                     <div className="border-r-2 heightother border-b-2 border-stone-300">
                         <main className="border-l-2 border-t-2 heightother border-stone-600 p-4 grid-cols-2 grid md:grid-cols-3 xl:grid-cols-4">
-                            <Item image={perc} hoverImage={perc2} page="gloves" name="COZY BLUE GLOVES UNISEX" price="2924" />
+                            <Item image={perc} hoverImage={perc2} page="gloves" name="OZY MULTI-COLORED LIGHTERS" price="2924" />
                             <Item image={podv} hoverImage={podv} page="necklace" name="COZY SILVER NECKLACE UNISEX" price="8424" />
                             <Item image ={fire} hoverImage={fireHover} page="Black" name="COZY BLUE AND RED LIGHTERS" price="224"/>
                         </main>
