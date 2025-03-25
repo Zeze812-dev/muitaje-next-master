@@ -51,7 +51,7 @@ export function ItemPage({ children, size = [], color = [], displayColor = [], p
 
                     <div className=" sm:flex md:px-10">
                         <div className="flex justify-center">
-                            <div className="w-full px-4 sm:w-[400px]">
+                            <div className="w-full px-4 widthcarusel">
                                 <MyCaruel>
                                     {imgs.map((p, index) => (
                                         <div onClick={() => {
