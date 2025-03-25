@@ -65,23 +65,23 @@ export function ItemPage({ children, size = [], color = [], displayColor = [], p
                             </div>
                         </div>
 
-                        <div className=" phonewidthtxt static640 phoneabsolute otherposition minwidthtxt text-2xl mx-3 text-in max-w-4xl z-10 clear-right">
+                        <div className=" text-shadow phonewidthtxt static640 phoneabsolute otherposition minwidthtxt text-2xl mx-3 text-in max-w-4xl z-10 clear-right">
                             <p className="z-20">
                                 WAIT FOR ME: <br />
                                 {about1}
                             </p>
-                            <p className="my-5">
+                            <p className=" text-shadow my-5">
                                 ABOUT ME: <br />
                                 {about2}
                             </p>
 
-                            <p>
+                            <p className="text-shadow">
                                 MY PRICE: <br />
                                 {price} руб.
                             </p>
                         </div>
-                        <div className="absolute w-1/3 clear-right h-96 phoneright0  " >
-                            <div className="relative w-full mt-96  h-96">
+                        <div className="absolute w-screen clear-right h-96 phoneright0  " >
+                            <div className="relative w-screen mt-96  h-96">
                                 {children}
                             </div>
                         </div>
