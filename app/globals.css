@@ -181,10 +181,10 @@ body {
  position: absolute;
   }
     .phonetp350{
-        margin-top: 350px;
+        margin-top: 400px;
     }
     .phonetp400{
-        margin-top: 400px;
+        margin-top: 450px;
     }
     .phonetp500{
         margin-top: 550px;
@@ -203,13 +203,13 @@ body {
       height: 50px;
   }
   .heightphone{
-    height: 450px;
+    height: 350px;
   }
   .heightphonenecklace{
       height: 350px;
   }
   .heightphone350{
-      height: 350px;
+      height: 200px;
   }
 .phonealign{
  margin-left: 0;
@@ -234,6 +234,9 @@ body {
     }
     .phonemarginb700{
         margin-top:700px;
+    }
+    .mltxtphone{
+        margin-left: 1.2rem;
     }
     .glovesgirlmr{
         margin-right: 0px;
@@ -283,6 +286,9 @@ body {
 @media (min-width: 768px) {
     .otherposition{
         position: static;
+    }
+    .mltxtnotphone{
+        margin-left: 3.5rem;
     }
     .minwcartitem96{
         width: 24rem;
