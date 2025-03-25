@@ -45,13 +45,13 @@ export function ItemPage({ children, size = [], color = [], displayColor = [], p
             <div className="relative bg-gradient-dark text-white overflow-auto h-screen">
                 <div className="relative">
                     <GreyBar title={title} />
-                    <h1 className="text-4xl sm:text-5xl mx-14">
+                    <h1 className="text-4xl sm:text-5xl mltxtphone mltxtnotphone mx-14">
                         {itemName}
                     </h1>
 
                     <div className=" sm:flex md:px-10">
                         <div className="flex justify-center">
-                            <div className="w-full px-4 widthcarusel">
+                            <div className="w-full px-4 sm:w-[400px]">
                                 <MyCaruel>
                                     {imgs.map((p, index) => (
                                         <div onClick={() => {
