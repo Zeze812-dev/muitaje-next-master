@@ -199,6 +199,9 @@ body {
     width: 180px;
   }
 
+  .ordernumberh{
+      height: 50px;
+  }
   .heightphone{
     height: 450px;
   }
@@ -255,6 +258,7 @@ body {
     .static640{
         position: static;
     }
+
     .widthgloves{
         width: 1000px;
     }
@@ -289,14 +293,20 @@ body {
     .cartflex{
         display: flex;
     }
+    .ordernumberw{
+        height:8rem;
+    }
   .md768height1{
     min-height: 730px;
   }
+    .md768height3{
+        min-height: 600px;
+    }
     .md768height2{
         min-height: 500px;
     }
     .widthnecklace{
-        width: 450px;
+        width: 400px;
     }
   .minwidthtxt{
       width: 896px;
@@ -307,6 +317,15 @@ body {
   .heightphonegirlpants{
       height: 400px;
   }
+  .heightother{
+      height: 703px;
+  }
+  .widthcarusel{
+    width: 500px;
+  }
+  .widthfiregitl{
+      width: 450px;
+  }
 }
 @media (min-width: 1300px) {
     .mrgloves1300{
@@ -314,3 +333,6 @@ body {
     }
 }
 
+.text-shadow {
+    text-shadow: 6px 6px 10px rgba(0, 0, 0, 0.5);
+}
