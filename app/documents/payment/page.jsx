@@ -1,10 +1,11 @@
 import {Window} from "@/components/documents/window.jsx";
+import logo from "@/components-assets/order/logodostavka.webp"
 
 export default function PaymentsPage() {
     return (
         <>
             <title>Muiraje Paymants</title>
-            <Window title="Documents/Payment">
+            <Window title="Documents/Payment" logo={logo} >
                 <div className="text-center flex flex-col items-center w-full px-5">
                     <h1 className="text-8xl sm:text-9xl  leading-[100px]">
                         Оплата.
