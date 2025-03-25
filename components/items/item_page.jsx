@@ -45,7 +45,7 @@ export function ItemPage({ children, size = [], color = [], displayColor = [], p
             <div className="relative bg-gradient-dark text-white overflow-auto h-screen">
                 <div className="relative">
                     <GreyBar title={title} />
-                    <h1 className="text-4xl sm:text-5xl mx-14">
+                    <h1 className="text-4xl sm:text-5xl mltxtphone mltxtnotphone mx-14">
                         {itemName}
                     </h1>
 
