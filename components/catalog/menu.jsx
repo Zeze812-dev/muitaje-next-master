@@ -17,8 +17,16 @@ import Image from "next/image";
 function MenuItem({ icon, name,page, className }) {
     return (
         <Link href={"../" + page}>
-        <div className={"text-xl text-center w-10 " + className}>
-            <Image className="block w-10 min-w-10 min-h-14 h-full render" src={icon} alt="" />
+            <div className={`
+                text-xl text-center w-12 
+                transition-all justify-center
+                align-items-center
+                hovermenucatalog
+                focus:bg-gray-200 focus:rounded-lg focus:p-1 
+                hovermenucatalog2
+                ${className}
+            `}>
+            <Image className="block w-12 min-w-10 min-h-14 h-full render" src={icon} alt="" />
             {name}
         </div>
         </Link>
