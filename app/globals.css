@@ -336,3 +336,15 @@ body {
 .text-shadow {
     text-shadow: 6px 6px 10px rgba(0, 0, 0, 0.5);
 }
+.hovermenucatalog:hover{
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    --tw-border-opacity: 1;
+    border-color: rgb(168 162 158 / var(--tw-border-opacity))
+}
+.hovermenucatalog2:active{
+    border-top-width: 2px;
+    border-left-width: 2px;
+    --tw-border-opacity: 1;
+    border-color: rgb(168 162 158 / var(--tw-border-opacity))
+}
