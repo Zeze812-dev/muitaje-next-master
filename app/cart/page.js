@@ -31,8 +31,9 @@ export default function CartPage() {
 
             <div className="h-screen relative">
                 <WindowBorder>
-                    <BaseBar title="Your (Good) choice" logo={logo} bg="grey" linkTo="../catalog"/>
-
+                    <div className="pr-2 pl-2 pt-1">
+                    <BaseBar title="Your (Good) choice" logo={logo} classname="ml-5" bg="grey" linkTo="../catalog"/>
+                    </div>
                     <main className="px-2 sm:px-4 mt-3 ">
                       
                         <Image className="mb-5" src={HICartImg} alt=""/>
@@ -56,6 +57,17 @@ export default function CartPage() {
                         </div>
                     </main>
 
+                    <div className=" caret-colortxtcart absolute  text-2xl flex justify-center w-full bottomcarttxt align-middle ml-auto text-center left-auto right-auto items-center h-fit">
+                        <div className="mb-5">
+                        <h2 className="caret-colortxtcart">При сумме заказа от 12424 рублей доставка осуществляется бесплатно, независимо от выбранного способа!</h2>
+                        </div>
+                            <div className="caret-colortxtcart absolute mt-4 gap-16 text-2xl flex justify-center w-full bottomcarttxt align-middle ml-auto text-center left-auto right-auto items-center h-fit"> <br />
+                        <a href="documents/delivery">Доставка</a>
+                                <a href="documents/payment">Оплата</a>
+                                <a href="documents/contact">Контакты</a>
+                                <a href="documents">Оферта и политика конфиденциальности</a>
+                        </div>
+                    </div>
                 </WindowBorder>
 
 
