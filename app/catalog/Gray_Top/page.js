@@ -4,6 +4,7 @@ import top_img2 from "@/assets/items/top/top2.webp"
 import top_img3 from "@/assets/items/top/top3.webp"
 import top_img4 from "@/assets/items/top/top4.webp"
 import top_img5 from "@/assets/items/top/top5.webp"
+import top_img6 from "@/assets/items/top/top6.webp"
 import girl from "@/assets/items/top/top-girl.webp"
 
 import {ItemPage} from "@/components/items/item_page";
@@ -16,7 +17,7 @@ export default function TopPage() {
     const size = ["S", "M", "L", "XL"];
     const color = ["White_Top", "Gray_Top"];
     const displayColor = color.map(item => item.replace(/_/g, ' '));
-    const imgs = [top_img1, top_img2, top_img3, top_img4, top_img5]
+    const imgs = [top_img1, top_img2, top_img3, top_img4, top_img5,top_img6]
     const png = [topgray]
     return (
         <>
