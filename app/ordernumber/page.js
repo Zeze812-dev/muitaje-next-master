@@ -12,7 +12,7 @@ const OrderNumber = () => {
 
     useEffect(() => {
         // Запрашиваем текущее значение счетчика с сервера
-        fetch('http://localhost:4000/api/ordernumber')
+        fetch('https://muiraje.ru/api/ordernumber')
             .then(response => response.json())
             .then(data => {
                 setOrderNumber(data.orderNumber);
@@ -33,13 +33,13 @@ const OrderNumber = () => {
                             <Image className="ordernumberw ordernumberh mx-auto" src={itworked2} alt="" />
                         </div>
                         <div className="w-full flex justify-center text-center">
-                            <h2 className="text-8xl fill:#1200ff pt-20 pb-20 justify-center content-center">{orderNumber}</h2>
+                            <h2 className="text-8xl caret-colortxtcart2 pt-20 pb-20 justify-center content-center">{orderNumber}</h2>
                         </div>
                         <div className="block w-2/4 m-auto align-middle justify-center">
-                            <Image className="h-34 mx-auto render" src={soon} alt="" />
+                            <Image className="h-40 mx-auto render" src={soon} alt="" />
                             <a href="https://t.me/care224radge" target="_blank" rel="noopener noreferrer">
                                 <div className="flex pt-5 pb-0 justify-center content-center">
-                                    <Image className="h-8 render" src={tg} alt="" />
+                                    <Image className="h-10 w-72 render" src={tg} alt="" />
                                 </div>
                             </a>
                         </div>
