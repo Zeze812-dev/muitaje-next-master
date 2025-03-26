@@ -57,7 +57,7 @@ export function Catalog() {
                             <Item image={hoodie} hoverImage={hoodie} page="hoodie" name="COZY OVERSIZE GRAY HOODIE UNISEX" price="4824" />
                             <Item image={pants} hoverImage={pantsHover} page="Light_Gray" name="COZY OVERSIZE GRAY PANTS UNISEX" price="5824" />
                             <Item image={top} hoverImage={topHover} page="White_Top" name="COZY TANK TOPS UNISEX" price="2624" />
-                            <Item image={perc} hoverImage={perc2} page="gloves" name="OZY MULTI-COLORED LIGHTERS" price="2924" />
+                            <Item image={perc} hoverImage={perc2} page="gloves" name="COZY MULTI-COLORED LIGHTERS" price="2924" />
                             <Item image={podv} hoverImage={podv2} page="necklace" name="COZY SILVER NECKLACE UNISEX" price="8424" />
                             <Item image ={fire} hoverImage={fireHover} page="Black" name="COZY BLUE AND RED LIGHTERS" price="224"/>
                         </main>
