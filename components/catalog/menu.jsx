@@ -18,7 +18,7 @@ function MenuItem({ icon, name,page, className }) {
     return (
         <Link href={"../" + page}>
             <div className={`
-                text-xl text-center w-12 
+                text-xl text-center w-12 iconsmenuphone
                 transition-all justify-center
                 align-items-center
                 hovermenucatalog
@@ -26,7 +26,7 @@ function MenuItem({ icon, name,page, className }) {
                 hovermenucatalog2
                 ${className}
             `}>
-            <Image className="block w-12 min-w-10 min-h-14 h-full render" src={icon} alt="" />
+            <Image className="block w-12 iconsmenuphone min-w-6 min-h-14 h-full render" src={icon} alt="" />
             {name}
         </div>
         </Link>
