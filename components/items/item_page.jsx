@@ -43,9 +43,11 @@ export function ItemPage({ children, size = [], color = [], displayColor = [], p
         <>
             <FullCarusel imgs={imgs} png={png} open={open} setOpen={setOpen} selImg={selImg} />
             <div className="relative bg-gradient-dark text-white overflow-auto h-screen">
-                <div className="relative">
-                    <GreyBar title={title} />
-                    <h1 className="text-4xl sm:text-7xl mltxtphone mltxtnotphone mx-14">
+                <div className="relative  ">
+                    <div className="text-shadow text-stroketitle font-basic33">
+                    <GreyBar title={title}  />
+                    </div>
+                    <h1 className="text-4xl text-shadow sm:text-7xl  mltxtphone mltxtnotphone mx-14">
                         {itemName}
                     </h1>
 
