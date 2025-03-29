@@ -180,6 +180,9 @@ body {
   .phoneabsolute{
  position: absolute;
   }
+    .iconsmenuphone{
+        width: 36px;
+    }
     .phonetp350{
         margin-top: 400px;
     }
@@ -261,7 +264,9 @@ body {
     .static640{
         position: static;
     }
-
+        .iconsmenunotphone{
+            width: 3rem;
+        }
     .widthgloves{
         width: 1000px;
     }
@@ -305,6 +310,9 @@ body {
   .md768height1{
     min-height: 730px;
   }
+  .md768heightneckale{
+      min-height: 450px;
+  }
     .md768height3{
         min-height: 600px;
     }
@@ -322,6 +330,9 @@ body {
   }
   .heightphonegirlpants{
       height: 400px;
+  }
+  .text-stroketitle{
+      -webkit-text-stroke: 0.3px black;
   }
   .heightother{
       height: 703px;
