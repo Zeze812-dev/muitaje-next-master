@@ -59,9 +59,9 @@ export default function CartPage() {
 
                     <div className=" caret-colortxtcart absolute  text-2xl flex justify-center w-full bottomcarttxt align-middle ml-auto text-center left-auto right-auto items-center h-fit">
                         <div className="mb-5">
-                        <h2 className="caret-colortxtcart">При сумме заказа от 12424 рублей доставка осуществляется бесплатно, независимо от выбранного способа!</h2>
+                        <h2 className="caret-colortxtcart text-xl">При сумме заказа от 12424 рублей доставка осуществляется бесплатно, независимо от выбранного способа!</h2>
                         </div>
-                            <div className="caret-colortxtcart absolute mt-4 gap-16 text-2xl flex justify-center w-full bottomcarttxt align-middle ml-auto text-center left-auto right-auto items-center h-fit"> <br />
+                            <div className="caret-colortxtcart absolute mt-4 gap-16 text-xl pr-20 flex justify-center w-full bottomcarttxt align-middle ml-auto text-center left-auto right-auto items-center h-fit"> <br />
                         <a href="documents/delivery">Доставка</a>
                                 <a href="documents/payment">Оплата</a>
                                 <a href="documents/contact">Контакты</a>
