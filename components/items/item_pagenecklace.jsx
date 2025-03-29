@@ -1,78 +1,132 @@
 "use client"
 
-import {BaseBar} from "@/components/base_bar.jsx";
-import {WindowBorder} from "@/components/documents/window.jsx";
-import {CartItem} from "@/components/cart/cart_item.jsx";
-import {Order} from "@/components/cart/order.jsx";
+import { GreyBar } from "@/components/items/grey_bar"
+import { MyCaruel } from "@/components/items/carusel";
+import { WinButton } from "@/components/mini_btn"
+import {PopupWarn} from "@/components/popupWarn.jsx";
 
-import HICartImg from "@/components-assets/cart/hi_cart.svg"
-import men from "@/assets/gif/men_return.webp"
-import men_text from "@/components-assets/cart/man_text.svg"
-import logo from "@/components-assets/cart/iconminicomp.webp"
+import { useCart } from "@/app/store.js"
 
-import {useCart} from "@/app/store.js";
+import { useState } from "react";
 import Image from "next/image";
+import FullCarusel from "@/components/items/fullCarusel";
+import {PopupToCart} from "@/components/popupToCart";
 
+export function ItemPage({ children, size = [], color = [], displayColor = [], png = [], title = "", page = "", itemName = "", imgs = [], about1 = "", about2 = "", about3 = "", about4 = "", price = 0 }) {
+    const addItem = useCart((state) => state.addToCart);
+    const [popupOpen, setPopup] = useState(false);
+    const [popupOpenCart, setPopupCart] = useState(false);
+    const [selSize, setSize] = useState("");
+    const [selColor, setColor] = useState("");
 
-const CartNull = () => {
-    return (
-        <div className="text-2xl mb-5 text-center">
-            Корзина пустая :(
-        </div>
-    )
-}
+    const [open, setOpen] = useState(false);
+    const [selImg, setSelImg] = useState(0);
 
-export default function CartPage() {
-    const cart = useCart((state) => state.cart)
+    const handleOpen = (s) => selSize === s ? setSize("") : setSize(s);
+    const handleOpen2 = (c) => {
+        selColor === c ? setColor('') : setColor(c);
+        window.location.href = `/catalog/${c}`;
+    };
+
+    const canAddItem = ((selSize !== "") || (size.length === 0));
+
+    const addToCartAndOpenPopup = () => {
+        if (canAddItem) {
+            addItem({ name: itemName, price: price, size: selSize, img: png[0] });
+            setPopupCart(true);
+            return;
+        }
+        setPopup(true);
+    };
 
     return (
         <>
-            <title>YOU CART</title>
+            <FullCarusel imgs={imgs} png={png} open={open} setOpen={setOpen} selImg={selImg} />
+            <div className="relative bg-gradient-dark text-white overflow-auto h-screen">
+                <div className="relative">
+                    <GreyBar title={title} />
+                    <h1 className="text-4xl sm:text-7xl mltxtphone mltxtnotphone mx-14">
+                        {itemName}
+                    </h1>
 
-            <div className="h-screen relative">
-                <WindowBorder>
-                    <div className="pr-2 pl-2 pt-1">
-                    <BaseBar title="Your (Good) choice" logo={logo} classname="ml-5" bg="grey" linkTo="../catalog"/>
+                    <div className=" sm:flex md:px-10">
+                        <div className="flex justify-center">
+                            <div className="w-full px-4 sm:w-[400px]">
+                                <MyCaruel>
+                                    {imgs.map((p, index) => (
+                                        <div onClick={() => {
+                                            setSelImg(index);
+                                            setOpen(true);
+                                        }} key={index}>
+                                            <Image className="" alt="" src={p} />
+                                        </div>
+                                    ))}
+                                </MyCaruel>
+                            </div>
+                        </div>
+
+                        <div className=" text-shadow phonewidthtxt static640 phoneabsolute otherposition minwidthtxt text-2xl mx-3 text-in max-w-2xl z-10 clear-right">
+                            <p className="z-20">
+                                WAIT FOR ME: <br />
+                                {about1}
+                            </p>
+                            <p className=" text-shadow my-5">
+                                ABOUT ME: <br />
+                                {about2} <br />
+                                {about3} <br />
+                                {about4}
+                            </p>
+
+                            <p className="text-shadow">
+                                MY PRICE: <br />
+                                {price} руб.
+                            </p>
+                        </div>
+                        <div className="absolute w-screen clear-right h-96 phoneright0  " >
+                            <div className="relative w-screen h-96">
+                                {children}
+                            </div>
+                        </div>
                     </div>
-                    <main className="px-2 sm:px-4 mt-3 ">
-                      
-                        <Image className="mb-5" src={HICartImg} alt=""/>
-                        <div className="cartflex cartblock w-full">
-                            <div className="block w-11/12">
-                        {cart.length === 0 && <CartNull/>}
-                        {cart.map(((item, index) => (
-                            <CartItem key={index} index={index} item={item}/>
-                        )))}
-                        </div>
-                        <div className="block widthordercart cartwfull">
-                        <Order cart={cart}/>
 
-                        <div className="mt-3 relative">
-                            <Image className="" src={men} alt=""/>
-                            <Image className="absolute top-4 right-5" src={men_text} alt=""/>
-                        </div>
-                        </div>
-   
+                    <div className="phonemarginb800 topm0 absolute w-full flex justify-center text-center">
+                        <div className="z-20">
+                            <WinButton onClick={addToCartAndOpenPopup}>I want it!</WinButton>
 
-                        </div>
-                    </main>
+                            {(size.length !== 0) && "Choose your size"}
+                            <div className="flex justify-center gap-2 text-3xl">
+                                {size.map((s, index) => (
+                                    <button
+                                        data-select={selSize === s}
+                                        className="data-[select=true]:underline"
+                                        key={index}
+                                        onClick={() => handleOpen(s)}
+                                    >
+                                        {s}
+                                    </button>
+                                ))}
+                            </div>
 
-                    <div className=" caret-colortxtcart absolute  text-2xl flex justify-center w-full bottomcarttxt align-middle ml-auto text-center left-auto right-auto items-center h-fit">
-                        <div className="mb-5">
-                        <h2 className="caret-colortxtcart">При сумме заказа от 12424 рублей доставка осуществляется бесплатно, независимо от выбранного способа!</h2>
-                        </div>
-                            <div className="caret-colortxtcart absolute mt-4 gap-16 text-2xl flex justify-center w-full bottomcarttxt align-middle ml-auto text-center left-auto right-auto items-center h-fit"> <br />
-                        <a href="documents/delivery">Доставка</a>
-                                <a href="documents/payment">Оплата</a>
-                                <a href="documents/contact">Контакты</a>
-                                <a href="documents">Оферта и политика конфиденциальности</a>
+                            {(color.length !== 0) && "Choose your color"}
+                            <div className="flex justify-center gap-2 text-2xl">
+                                {color.map((c, index) => (
+                                    <button
+                                        data-select={selColor === c}
+                                        className="data-[select=true]:underline"
+                                        key={index}
+                                        onClick={() => handleOpen2(c)}
+                                    >
+                                        {displayColor[index]} {/* Используем displayColor для отображения текста */}
+                                    </button>
+                                ))}
+                            </div>
                         </div>
                     </div>
-                </WindowBorder>
-
-
+                </div>
             </div>
-        </>
 
-    )
+            {popupOpen && <PopupWarn setOpen={setPopup} msg="Сначала нужно выбрать размер!" btn_msg="Окей, ща выберу." />}
+            {popupOpenCart && <PopupToCart setOpen={setPopupCart} msg="Товар в корзине!" btn_msg="Окей, ща выберу" />}
+        </>
+    );
 }
