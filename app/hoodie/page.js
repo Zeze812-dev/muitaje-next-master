@@ -1,22 +1,36 @@
-import {CatalogTopBar} from "@/components/catalog/top_bar";
-import {Menu} from "@/components/catalog/menu";
-import {Catalog} from "@/components/catalog/Hoodie";
-import {Pusk} from "@/components/catalog/pusk";
+import hoodie_png from "@/assets/catalog/hoodie.png"
+import hoodie_img2 from "@/assets/items/hoodie/hoodie1.webp"
+import hoodie_img1 from "@/assets/items/hoodie/hoodie123.webp"
+import hoodie_img3 from "@/assets/items/hoodie/hoodie3.webp"
+import hoodie_img4 from "@/assets/items/hoodie/hoodie4.webp"
+import hoodie_img5 from "@/assets/items/hoodie/hoodie5.webp"
+import hoodie_img6 from "@/assets/items/hoodie/hoodie6.webp"
+import hoodie_img7 from "@/assets/items/hoodie/hoodie7.webp"
+import hoodie_img8 from "@/assets/items/hoodie/hoodie8.webp"
+import hoodie_img9 from "@/assets/items/hoodie/hoodie9.webp"
+
+
+import girl from "@/assets/items/hoodie/hoodie-girl.webp"
+
+import {ItemPage} from "@/components/items/item_page";
+import Image from "next/image";
 
 export default function CatalogPage() {
+    const size = ["S", "M", "L", "XL", "XXL"];
+    const imgs = [hoodie_img2, hoodie_img1, hoodie_img3, hoodie_img4, hoodie_img5, hoodie_img6, hoodie_img7, hoodie_img8, hoodie_img9]
+    const png = [hoodie_png]
+
     return (
         <>
-            <title>Muiraje Catalog</title>
-            <div className='border-r-2 border-b-2 border-stone-700  h-screen max-h-screen mb-0 font-basis33'>
-                <div className='h-full w-full p-1 pb-10 flex-col flex bg-stone-200  border-l-2 border-t-2 border-white'>
-                    <div className='flex-none'>
-                        <CatalogTopBar/>
-                        <Menu/>
-                    </div>
-                    <Catalog/>
-                </div>
-            </div>
-            <Pusk/>
+            <title>Muiraje Hoodie</title>
+            <ItemPage png={png} size={size} imgs={imgs} title="Catalog/Hoodie" itemName="COZY OVERSIZE GRAY HOODIE UNISEX"
+                      about1="Отправка в течение 6-8 дней. Изготавливаюсь непосредственно в Санкт-Петербурге :)"
+                      about2="Подчеркну вашу деловую сторону и обеспечу комфорт. С капюшоном для прохладных дней, удобным карманом и вышивкой, я стану важной частью вашего повседневного гардероба, добавляя стиль и уют к любой ситуации.
+50% хлопок, 50% полиэстер, плотность: 305 г/м². "
+                      price={4824}>
+
+                <Image unoptimized src={girl} alt="" className="  absolute pt-5 sm:right-10 md768height1  heightphonegirl phonewidth phonetp350 phoneright0 heightphone topm0  sm:w-72 md:w-72  "/>
+            </ItemPage>
         </>
-    );
+    )
 }
