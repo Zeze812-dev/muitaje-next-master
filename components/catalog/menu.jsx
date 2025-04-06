@@ -18,7 +18,7 @@ function MenuItem({ icon, name,page, className }) {
     return (
         <Link href={"../" + page}>
             <div className={`
-                text-xl text-center w-12 iconsmenuphone
+                text-xl text-center w-32 iconsmenu iconsmenuphone
                 transition-all justify-center
                 align-items-center
                 hovermenucatalog
@@ -26,7 +26,7 @@ function MenuItem({ icon, name,page, className }) {
                 hovermenucatalog2
                 ${className}
             `}>
-            <Image className="block w-12 iconsmenuphone min-w-6 min-h-14 h-full render" src={icon} alt="" />
+            <Image className="block ml-1 iconsmenuphone min-w- min-h-14 h-full render" src={icon} alt="" />
             {name}
         </div>
         </Link>
@@ -41,7 +41,7 @@ const CartBtn = () => {
     return (
         <Link href="../cart">
         <div className="text-xl text-center">
-            <Image className="h-16 render" src={icon} alt=""/>
+            <Image className="h-16 cartcatalogicon render" src={icon} alt=""/>
              Корзина
 
         </div>
