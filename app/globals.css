@@ -292,7 +292,9 @@ body {
     .txtorderphone{
         font-size:45px;
     }
-
+    .cartcatalogicon{
+        height: 55px;
+    }
 }
 @media (min-width: 640px){
     .static640{
@@ -329,6 +331,9 @@ body {
 @media (min-width: 768px) {
     .otherposition{
         position: static;
+    }
+    .iconsmenu{
+        width: 48px;
     }
     .mltxtnotphone{
         margin-left: 3.5rem;
@@ -417,7 +422,7 @@ body {
 }
 .hovermenucatalog:hover{
     border-right-width: 2px;
-    border-bottom-width: 2px;
+    border-bottom-width: 3px;
     --tw-border-opacity: 1;
     border-color: rgb(168 162 158 / var(--tw-border-opacity))
 }
