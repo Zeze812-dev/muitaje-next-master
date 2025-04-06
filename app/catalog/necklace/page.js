@@ -11,7 +11,7 @@ import necklace9 from "@/assets/items/necklace/necklace9.webp"
 import necklace10 from "@/assets/items/necklace/necklace10.webp"
 import necklace11 from "@/assets/items/necklace/necklace11.webp"
 import girl from "@/assets/items/necklace/necklace_girl.webp"
-import girltxt from "@/assets/items/necklace/–  Did you have a good weekend_ I spent the whole weekend doing reports..svg"
+import girltxt from "@/assets/items/necklace/txtgirl.webp"
 
 import {ItemPage} from "@/components/items/item_pagenecklace";
 
