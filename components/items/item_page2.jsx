@@ -89,7 +89,7 @@ export function ItemPage({ children, size = [], color = [], displayColor = [], p
                         </div>
                     </div>
 
-                    <div className="phonemarginb700 topm0 absolute w-full flex justify-center text-center">
+                    <div className="phonemarginb700 topm0 absolute h-80 w-full flex justify-center text-center">
                         <div className="z-20">
                             <WinButton onClick={addToCartAndOpenPopup}>I want it!</WinButton>
 
