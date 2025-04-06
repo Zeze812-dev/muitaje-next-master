@@ -42,7 +42,7 @@ export function ItemPage({ children, size = [], color = [], displayColor = [], p
     return (
         <>
             <FullCarusel imgs={imgs} png={png} open={open} setOpen={setOpen} selImg={selImg} />
-            <div className="relative bg-gradient-dark text-white overflow-auto h-screen">
+            <div className="relative bg-gradient-dark text-white overflow-auto heightphoneallitems h-screen">
                 <div className="relative  ">
                     <div className="text-shadow text-stroketitle font-basic33">
                     <GreyBar title={title}  />
@@ -89,7 +89,7 @@ export function ItemPage({ children, size = [], color = [], displayColor = [], p
                         </div>
                     </div>
 
-                    <div className="phonemarginb500 topm0 absolute w-full flex justify-center text-center">
+                    <div className="phonemarginb500 topm0 mb-96 h-80 absolute w-full flex justify-center text-center">
                         <div className="z-20">
                             <WinButton onClick={addToCartAndOpenPopup}>I want it!</WinButton>
 
