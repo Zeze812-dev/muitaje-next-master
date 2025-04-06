@@ -14,7 +14,7 @@ export default function ReturnsPage() {
                 <div className="flex w-full justify-center gap-3 flex-col sm:flex-row">
                     <div className=" text-left flex-col items-start pl-8 " >
                         <Image className="h-42 w-3/4 render" src={vozvrat} alt="" />
-                        <p className="text-3xl text-justify leading-8 w-10/12 leading-5 max-w-[600px]">
+                        <p className="text-3xl text-justify  w-10/12 leading-6 max-w-[600px]">
                             Вы вправе отказаться от товара надлежащего качества в течение 8 календарных дней после
                             получения, в случае если произошла ошибка не с вашей стороны. Возврат товара надлежащего
                             качества возможен в случае, если сохранены его товарный вид (этикетки; ярлыки, содержащие
@@ -30,7 +30,7 @@ export default function ReturnsPage() {
                         </p>
                     </div>
                     <div className=" flex flex-col  items-end">
-                        <Image   width={1200} className="flex" src={girl} alt=""/>
+                        <Image   width={800} className="flex" src={girl} alt=""/>
                     </div>
 
                 </div>
