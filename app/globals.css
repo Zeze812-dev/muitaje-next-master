@@ -253,10 +253,10 @@ body {
         margin-top: 800px;
     }
     .heightphoneaccery{
-        height: 550px;
+        height: 650px;
     }
     .heightphonecatalog{
-        height: 850px;
+        height: 950px;
     }
     .phonemarginb700{
         margin-top:700px;
@@ -291,6 +291,7 @@ body {
     .txtorderphone{
         font-size:45px;
     }
+
 }
 @media (min-width: 640px){
     .static640{
@@ -322,6 +323,7 @@ body {
     .mrgloves1024px{
         margin-right: 0px;
     }
+
 }
 @media (min-width: 768px) {
     .otherposition{
