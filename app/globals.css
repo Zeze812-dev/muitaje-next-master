@@ -253,11 +253,12 @@ body {
         margin-top: 800px;
     }
     .heightphoneaccery{
-        height: 650px;
+        height: 700px;
     }
     .heightphonecatalog{
-        height: 950px;
+        height: 1000px;
     }
+
     .phonemarginb700{
         margin-top:700px;
     }
@@ -350,6 +351,9 @@ body {
   .md768heightneckale{
       min-height: 450px;
   }
+    .heightcatalog{
+        height:1200px;
+    }
     .md768height3{
         min-height: 600px;
     }
