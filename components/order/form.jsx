@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+
 import whoareyou from "@/components-assets/order/Who are you_.png";
 import Input from "@/components/order/input";
 import delivery from "@/components-assets/order/Delivery..png";
@@ -9,6 +10,8 @@ import Link from "next/link";
 import { useCart } from "@/app/store";
 import check from "@/components-assets/order/check.svg";
 import nocheck from "@/components-assets/order/nocheck.svg";
+
+
 
 export default function FormContent({ orderHandler }) {
     const cart = useCart((state) => state.cart);
@@ -33,13 +36,13 @@ export default function FormContent({ orderHandler }) {
     return (<>
         <form action={action} className=" flex flex-col items-center w-full px-5">
 
-            <Image className="h-12 render" src={whoareyou} alt=""/>
+           <h2 className="ordercolor txtorderphone fontsizetxtorder text-9xl">Who are you?</h2>
 
             <Input required name="name">Получатель (ФИО полностью)</Input>
             <Input required type="email" name="email">Email</Input>
             <Input required type="number" name="phone">Телефон</Input>
 
-            <Image className="h-11 mt-10" src={delivery} alt=""/>
+            <h2 className="ordercolor txtorderphone fontsizetxtorder text-9xl">Delivery.</h2>
 
             <Input required>Ваш Выберите пункт получения СДЭК</Input>
             <div className="w-3/5">
@@ -72,7 +75,7 @@ export default function FormContent({ orderHandler }) {
                           className="w-full bg-stone-300 border-l-2 border-t-2 border-stone-400 hover:outline-0"/>
 
 
-                <Image className="mx-auto render h-10 mt-8" src={thatsriht} alt=""/>
+                <h2 className="ordercolor txtorderphone fontsizetxtorder text-9xl text-center">That's right!</h2>
 
                 <p className="leading-4 mb-3">
                     {/*Сумма: {totalPrice} руб. <br/>*/}
