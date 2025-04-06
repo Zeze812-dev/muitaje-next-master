@@ -191,7 +191,7 @@ body {
         width: 36px;
     }
     .phonetp350{
-        margin-top: 400px;
+        margin-top: 300px;
     }
     .phonetp400{
         margin-top: 450px;
@@ -206,15 +206,17 @@ body {
     min-width: 340px;
   }
   .phonewidth{
-    width: 180px;
+    min-width: 200px;
   }
-
+  .cartcontactphone{
+      display:none;
+  }
 
   .ordernumberh{
       height: 50px;
   }
   .heightphone{
-    height: 350px;
+    height: 500px;
   }
   .heightphonenecklace{
       height: 300px;
@@ -294,6 +296,10 @@ body {
     }
     .cartcatalogicon{
         height: 55px;
+    }
+    .girlphonetop{
+        height: 350px;
+        width: 200px;
     }
 }
 @media (min-width: 640px){
@@ -397,6 +403,9 @@ body {
 }
   .ordertgfont{
       font-size:30px;
+  }
+  .cartcontactphoneflex{
+      display:flex;
   }
 }
 @media (min-width: 1300px) {
