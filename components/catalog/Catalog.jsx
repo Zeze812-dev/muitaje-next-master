@@ -53,7 +53,7 @@ export function Catalog() {
             <div className="mx-3 mb-3 bg-white border-r-2 border-b-2 border-stone-100 overflow-auto flex-1">
                 <div className=" border-l-2  border-t-2 border-stone-400">
                     <div className="border-r-2 border-b-2 border-stone-300">
-                        <main className=" font-basis33 border-l-2 border-t-2 border-stone-600 p-4 grid-cols-2 grid md:grid-cols-3 xl:grid-cols-4">
+                        <main className=" font-basis33 border-l-2 heightphonecatalog border-t-2 border-stone-600 p-4 grid-cols-2 grid md:grid-cols-3 xl:grid-cols-4">
                             <Item image={hoodie} hoverImage={hoodie} page="hoodie" name="COZY OVERSIZE GRAY HOODIE UNISEX" price="4824" />
                             <Item image={pants} hoverImage={pantsHover} page="Light_Gray" name="COZY OVERSIZE GRAY PANTS UNISEX" price="5824" />
                             <Item image={top} hoverImage={topHover} page="White_Top" name="COZY TANK TOPS UNISEX" price="2624" />
