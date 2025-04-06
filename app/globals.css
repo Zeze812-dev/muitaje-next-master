@@ -252,6 +252,12 @@ body {
     .phonemarginb800{
         margin-top: 800px;
     }
+    .heightphoneaccery{
+        height: 550px;
+    }
+    .heightphonecatalog{
+        height: 850px;
+    }
     .phonemarginb700{
         margin-top:700px;
     }
@@ -364,7 +370,7 @@ body {
       -webkit-text-stroke: 0.3px black;
   }
   .heightother{
-      height: 703px;
+      height: 800px;
   }
   .widthcarusel{
     width: 500px;
