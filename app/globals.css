@@ -65,6 +65,13 @@
 /*  font-style:normal;*/
 /*  font-display:swap;*/
 /*}*/
+@font-face {
+    font-family: 'SwissSiena';
+    src: url('/fonts/swisssienarusbydaymarius.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
 
 @layer base {
   * {
@@ -116,17 +123,17 @@
   black 0px 1px 0;
 }
 
+
 .text-vertical {
   writing-mode: vertical-rl;
 }
 
 .swiss-siena {
-  font-family: 'Swiss Siena';
+  font-family: 'SwissSiena';
 }
 
 .font-basic33 {
   font-family: 'basis33';
-  letter-spacing: -1px;
 }
 
 .zt-formom {
@@ -202,6 +209,7 @@ body {
     width: 180px;
   }
 
+
   .ordernumberh{
       height: 50px;
   }
@@ -209,7 +217,16 @@ body {
     height: 350px;
   }
   .heightphonenecklace{
-      height: 350px;
+      height: 300px;
+  }
+  .widthphonenecklace{
+      min-width: 120px;
+      width: 150px;
+  }
+  .girltxtphone{
+      margin-right: 120px;
+      padding-top: 350px;
+      width: 100px;
   }
   .heightphone350{
       height: 200px;
@@ -259,6 +276,15 @@ body {
     .cartitemminw{
         width: 100%;
     }
+    .lineheightordernumberphone2{
+        line-height: 30px;
+    }
+    .mtnecklacephone{
+        margin-top: 750px;
+    }
+    .txtorderphone{
+        font-size:45px;
+    }
 }
 @media (min-width: 640px){
     .static640{
@@ -283,6 +309,9 @@ body {
     }
     .topm0{
         margin-top: 0px;
+    }
+    .mtiwantit{
+        margin-top: 490px;
     }
     .mrgloves1024px{
         margin-right: 0px;
@@ -343,10 +372,31 @@ body {
   .widthfiregitl{
       width: 450px;
   }
+  .fontsizetxtorder{
+      font-size:100px;
+  }
+.lineheightordernumberphone{
+    line-height: 70px;
+}
+  .ordertgfont{
+      font-size:30px;
+  }
 }
 @media (min-width: 1300px) {
     .mrgloves1300{
         margin-right:250px;
+    }
+    .girlnecklace{
+        min-height: 600px;
+        min-width: 200px;
+    }
+    .mrnecklace{
+        margin-right: 400px;
+    }
+    .girltxt{
+        margin-right: 250px;
+        padding-top: 300px;
+        width: 150px;
     }
 }
 
@@ -373,4 +423,8 @@ body {
 }
 .caret-colortxtcart2{
     color: #1200ff;
+}
+.ordercolor{
+    color: #B5B5B5;
+    text-shadow: rgba(0,0,0,25) 0px 2px 0px;
 }
